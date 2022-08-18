@@ -1,0 +1,10 @@
+import { Block } from '../../protocols/blocks';
+import { ImageCover } from '../../protocols/page-props';
+export declare class PageBlockToCoverImageSource {
+    private readonly _pageBlock;
+    constructor(pageBlock: Block);
+    toImageCover(): Promise<ImageCover | null>;
+    private _isImageURL;
+    private getImageAuthenticatedSrc;
+    private _pageCoverPositionToPositionCenter;
+}

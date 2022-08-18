@@ -1,0 +1,233 @@
+/* @import '../nav.css'; */
+body{
+    overflow-x: hidden;
+}
+.search-results{
+    width: 100%;
+    padding: 30px 0; 
+}
+
+.heading{
+    margin-top: 20px;
+    font-family: "monaco", monospace;   
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin-left: -50px;
+    margin-bottom: 40px;
+    padding: 0 10vw;
+}
+
+.heading span{
+    font-weight: 700;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    grid-row-gap: -10px;
+}
+
+/* nav */
+
+
+/* .dropdown-nav:nth-child(1){
+    position: absolute;
+    left: 750px;
+    margin-top: 60px;
+    list-style: none;
+    display: inline-block;
+    background: brown;
+    right: 500px;
+    transform: translateX(-50%);
+    padding: 0px;
+    top: 50px;
+    width: 136px;
+
+    opacity: 1;
+    border-radius: 5px;
+} */
+/* 
+.links-container .dropdown-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: #fff;
+    opacity: 1;
+    border-radius: 5px;
+}
+.links-container .dropdown-nav a{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: rgb(182, 0, 0);
+    color: #313131;
+    
+    text-decoration: none;
+}
+.links-container .dropdown-nav a{
+    position: relative;
+    cursor: pointer;
+    font-family: poppins;
+    font-size: 14px;
+    letter-spacing: 1px;
+    float: left;
+    width: 136px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+    opacity: 1;
+}
+.links-container .dropdown-nav a:hover{
+    opacity: 1;
+    color: #313131;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dropdown-nav{
+    position: inherit;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    
+}
+.dropdown-nav li{
+    background: #313131;
+    display: none;
+  
+}
+
+.links-container li:hover .dropdown-nav li{
+    display: block;
+    opacity: 1;
+    
+}  */
+.modal {
+    display:    none;
+    opacity: 0.7;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+
+#url{
+    font-family: "monaco", monospace;
+    font-size: 20px;
+    width: 60%;
+    margin-left: 50px;
+    margin-top: -30px;
+    height: 40px;
+    display: block;
+    padding: 10px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 100px;
+
+    border: 1px solid #b8b0a2;
+    color: #b0a48f;
+    outline: none;
+}
+.proIn{
+    font-weight: lighter;
+    font-size: 15px;
+    margin-left: 650px;
+    opacity: 0.8;
+}
+.proBtn{
+    position: relative;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 300px;
+    background: rgba(137, 136, 116, 0.782);
+    border-radius: 10px;
+    top: 10px;
+    width: 150px;
+    transition: .5s;
+    border: 2px solid #0000007e;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.editSpace{
+    display: none;
+    background: rgba(137, 136, 116, 0.782);
+    border-radius: 10px;
+
+}
+.editBtn{
+    display: none;
+    position: relative;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 200px;
+    background: rgba(137, 136, 116, 0.782);
+    border-radius: 10px;
+    top: 10px;
+    width: 100px;
+    transition: .5s;
+    border: 2px solid #0000007e;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+
+}
+.htBtn{
+    display: none;
+    position: relative;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+    background: rgba(196, 193, 130, 0.782);
+    border-radius: 10px;
+    top: 10px;
+    width: 150px;
+    transition: .5s;
+    border: 3px solid #0000007e;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+
+}
+.conBtn{
+    display: none;
+        position: relative;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 400px;
+    background: rgba(196, 193, 130, 0.782);
+    border-radius: 10px;
+    top: 10px;
+    width: 150px;
+    transition: .5s;
+    border: 3px solid #0000007e;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+
+}
+
+@media screen and (max-width: 900px){
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        grid-row-gap: -10px;
+    }
+}

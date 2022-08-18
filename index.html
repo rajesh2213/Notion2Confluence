@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion2Confluence</title>
+    <link rel="stylesheet" href="style.css ">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+</head>
+
+<body>
+    <nav class="navbar"> </nav>
+
+    <header class="hero-section">
+        <video src="/images/video.mp4"muted loop autoplay></video>
+        <div class="content">
+            <h1>    Notion </h1> <h2>&#8623; </h2> <h1>Confluence</h1>
+
+        </div>
+    </header>
+    <div class="bg"></div>
+
+
+    <section id="men-tshirts-products"></section>
+
+
+
+    <section class="collection-container">
+        <a href="https://www.notion.so/" class="collection">
+            <img src="images/Notion_app_logo.png" class="inImg" alt="">
+            <p class="collection-title">About Notion</p>
+
+        </a>
+        <a href="https://www.atlassian.com/software/confluence" class="collection">
+            <img src="images/conV1_04476056-722a-4424-b8fd-70b33437643f_609178e25b104aa6814d40013194776e.png" class="inImg" alt="">
+            <p class="collection-title">About Confluence<p>
+        </a>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+
+
+                <filter id="squiggly-0">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+                    <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+                </filter>
+                <filter id="squiggly-1">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+                </filter>
+
+                <filter id="squiggly-2">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+                </filter>
+                <filter id="squiggly-3">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+                </filter>
+
+                <filter id="squiggly-4">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+                </filter>
+            </defs>
+        </svg>
+
+
+
+    </section>
+    <section class="collection-container1">
+        <a href="/" class="collection1">
+            <img src="images/New_to_Notion_-_Chapter_Hero.png" class="elec-img" alt="">
+            <p class="collection-title"></p>
+        </a>
+        <h2 class="section__title">Supported features</h2>
+        <p class="section__text">Headings,Text With Decorations,
+            Quote,
+            Image,
+            YouTube, Videos,
+            Code
+            </p>
+            <p class="section__text1">To-do,Checkbox,Bulleted Lists,Numbered Lists,Toggle Lists,Divider,Callout,Nested blocks</p>
+            <a href="" class="rotate-text">Converter</a>
+
+    </section>
+    
+
+
+    <footer> </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 400) {
+                    //  $(".navbar").css({"opacity" : "1"})
+                    // $(".navbar").css({"background-color" : "rgb(250, 249, 249,1)"})
+                    $(".navbar").css({ "background-color": "rgb(33, 31, 27,1)" })
+                } else {
+                    //  $(".navbar").css({"opacity" : ""})
+                    $(".navbar").css({ "background-color": "rgb(33, 31, 27,0.3)" })
+
+                }
+
+            })
+        })
+    </script>
+    <script src="nav.js"></script>
+    <script src="home.js"></script>
+    <script src="footer.js"></script>
+
+</body>
+
+</html>

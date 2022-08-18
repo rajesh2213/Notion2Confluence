@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - </title>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/product.css">
+    <link rel="stylesheet" href="../nav.css">
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+
+    <div class="product-html">
+    <section class="product-details">
+        <div class="image-slider">
+            <div class="product-images">
+                <img src="" class="active" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="details">
+            <h2 class="product-brand"></h2>
+            <p class="product-short-des"></p>
+            <span class="product-price"></span>
+            <span class="product-actual-price"></span>
+            <span class="product-discount"></span>
+
+            <p class="product-sub-heading">select size</p>
+            <div class="size-button">
+            <input type="radio" name="size" value="xs"  hidden id="xs-size">
+            <label for="xs-size" class="size-radio-btn">xs</label>
+            <input type="radio" name="size" value="s"  hidden id="s-size">
+            <label for="s-size" class="size-radio-btn">s</label>
+            <input type="radio" name="size" value="m" hidden id="m-size">
+            <label for="m-size" class="size-radio-btn">m</label>
+            <input type="radio" name="size" value="l" hidden id="l-size">
+            <label for="l-size" class="size-radio-btn">l</label>
+            <input type="radio" name="size" value="xl" hidden id="xl-size">
+            <label for="xl-size" class="size-radio-btn">xl</label>
+            <input type="radio" name="size" value="xxl" hidden id="xxl-size">
+            <label for="xxl-size" class="size-radio-btn">xxl</label>
+            </div>
+            <div class="btn-group">
+                <button class="btn cart-btn">add to cart</button>
+                <button class="btn wishlist-btn">add to wishlist</button>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <section class="detail-des">
+        <h2 class="heading">description </h2>
+        <p class="des"></p>
+
+    </section>
+
+
+    <section class="container-for-card-slider"></section>
+
+    <!--product cards-->
+    <!-- <section class="product">
+        <h2 class="product-category">shoes</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+    </section> -->
+    <!-- <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/card9.png" class="product-thumb" alt="">
+            <button class="card-btn">add to wishlist</button>
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des">A short line about the dress...</p>
+            <span class="price">$20</span> <span class="actual-price">$40</span>
+        </div>
+    </div> -->
+
+    </div>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100){
+                        //  $(".navbar").css({"opacity" : "1"})
+                       // $(".navbar").css({"background-color" : "rgb(250, 249, 249,1)"})
+                        $(".navbar").css({"background-color" : "rgb(33, 31, 27,1)"})
+                    }else {
+                        //  $(".navbar").css({"opacity" : ""})
+                        $(".navbar").css({"background-color" : "rgb(33, 31, 27,1)"})
+                         
+                     }
+                
+                })
+            })
+    </script>
+    <script src="../nav.js"></script>
+    <script src="../footer.js"></script>
+    <script src="../home.js"></script>
+    <script src="../product.js"></script>
+</body>
+
+</html> 

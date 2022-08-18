@@ -1,0 +1,22 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PageRecordValidator = void 0;
+var errors_1 = require("../../../errors");
+var PageRecordValidator = /** @class */ (function () {
+    function PageRecordValidator() {
+    }
+    PageRecordValidator.prototype.validate = function (notionPageId, pageRecord) {
+        var _a, _b, _c, _d;
+        var data = pageRecord.data;
+        if (pageRecord.status === 401 || !((_b = (_a = data.results) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.value)) {
+            return new errors_1.NotionPageAccessError(notionPageId);
+        }
+        if (!((_d = (_c = data.results[0]) === null || _c === void 0 ? void 0 : _c.value) === null || _d === void 0 ? void 0 : _d.content)) {
+            return new errors_1.MissingContentError(notionPageId);
+        }
+        return null;
+    };
+    return PageRecordValidator;
+}());
+exports.PageRecordValidator = PageRecordValidator;
+//# sourceMappingURL=page-record-validation.service.js.map

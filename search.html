@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results for</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <link rel="stylesheet" href="../style.css ">
+    <link rel="stylesheet" href="../search.css">
+
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+
+    <section class="search-results">
+
+        <h1 class="heading">Enter the Url of the Notion page:  </h1>
+        <p class="proIn">Processing might take about 30 seconds</p>
+        <input type="text" id="url"  placeholder="URL of the notion page">
+        <button class="proBtn">Process</button>
+        <button class="htBtn">View-Html</button>
+        <button class="conBtn">View-Confluence</button>
+
+        <button class="editBtn">Edit</button>
+        <section class="card-container"></section>
+
+    </section>
+<div class="editSpace">
+    <P class="editIns">Paste the contents of the Clipboard in Tools &#x2192; SourceCode</P>
+
+    <textarea name="myTextarea" id="myTextarea" ></textarea>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/tinymce.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/jquery.tinymce.min.js"></script>
+
+    <script class="textA">
+
+    tinymce.init({
+        selector: '#myTextarea',
+
+    plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons',
+    imagetools_cors_hosts: ['picsum.photos'],
+    menubar: 'file edit view insert format tools table help',
+    toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
+    toolbar_sticky: true,
+    autosave_ask_before_unload: true,
+    autosave_interval: "30s",
+    autosave_prefix: "{path}{query}-{id}-",
+    autosave_restore_when_empty: false,
+    autosave_retention: "2m",
+    image_advtab: true,
+    /*content_css: '//www.tiny.cloud/css/codepen.min.css',*/
+    link_list: [
+        { title: 'My page 1', value: 'https://www.codexworld.com' },
+        { title: 'My page 2', value: 'https://www.xwebtools.com' }
+    ],
+    image_list: [
+        { title: 'My page 1', value: 'https://www.codexworld.com' },
+        { title: 'My page 2', value: 'https://www.xwebtools.com' }
+    ],
+    image_class_list: [
+        { title: 'None', value: '' },
+        { title: 'Some class', value: 'class-name' }
+    ],
+    importcss_append: true,
+    file_picker_callback: function (callback, value, meta) {
+        /* Provide file and text for the link dialog */
+        if (meta.filetype === 'file') {
+            callback('https://www.google.com/logos/google.jpg', { text: 'My text' });
+        }
+    
+        /* Provide image and alt text for the image dialog */
+        if (meta.filetype === 'image') {
+            callback('https://www.google.com/logos/google.jpg', { alt: 'My alt text' });
+        }
+    
+        /* Provide alternative source and posted for the media dialog */
+        if (meta.filetype === 'media') {
+            callback('movie.mp4', { source2: 'alt.ogg', poster: 'https://www.google.com/logos/google.jpg' });
+        }
+    },
+    templates: [
+        { title: 'New Table', description: 'creates a new table', content: '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>' },
+        { title: 'Starting my story', description: 'A cure for writers block', content: 'Once upon a time...' },
+        { title: 'New list with dates', description: 'New List with dates', content: '<div class="mceTmpl"><span class="cdate">cdate</span><br /><span class="mdate">mdate</span><h2>My List</h2><ul><li></li><li></li></ul></div>' }
+    ],
+    template_cdate_format: '[Date Created (CDATE): %m/%d/%Y : %H:%M:%S]',
+    template_mdate_format: '[Date Modified (MDATE): %m/%d/%Y : %H:%M:%S]',
+    height: 600,
+    image_caption: true,
+    quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
+    noneditable_noneditable_class: "mceNonEditable",
+    toolbar_mode: 'sliding',
+    contextmenu: "link image imagetools table",
+    
+
+    });
+    
+    </script>
+</div>
+
+    <footer></footer>
+
+    <script src="../nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100){
+                        // $(".navbar").css({"opacity" : "1"})
+                       // $(".navbar").css({"background-color" : "rgb(250, 249, 249,1)"})
+                        $(".navbar").css({"background-color" : "rgb(33, 31, 27,1)"})
+                    }else {
+                        //  $(".navbar").css({"opacity" : ""})
+                        $(".navbar").css({"background-color" : "rgb(33, 31, 27,1)"})
+                         
+                     }
+                
+                })
+            })
+    </script>
+    <div class="modal"></div>
+    <script src="../footer.js"></script>
+    <script src="../home.js"></script>
+    <script src="../search.js"></script>
+    <script src="../nav.js"></script>
+</body>
+
+</html>
